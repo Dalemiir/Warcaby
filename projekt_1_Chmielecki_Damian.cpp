@@ -52,25 +52,17 @@ void the_library_is_open(int X,int Y,int& wiersz,int& kolumna);
 
 int main()
 {
-
 	setlocale(LC_ALL, ""); //strona kodowa CP852 
-
 	int PLANSZA[MAX_W][MAX_K];
 	int k = 0;
 	int gracz = 3;
 
 	menu();
-
 	gen_planszy(PLANSZA, k);
-
 	ruch(gracz, PLANSZA);
-
-
 	system("PAUSE");
-
 	return 0;
 }
-
 
 void menu() {
 
@@ -98,7 +90,6 @@ void menu() {
 		cout << "-----------------------" << endl;
 		cout << endl;
 }
-
 
 void gen_planszy(int PLANSZA[][MAX_K], int k) {
 
@@ -128,7 +119,6 @@ void gen_planszy(int PLANSZA[][MAX_K], int k) {
 	cout << endl;
 }
 
-
 void plansza_startowa(int PLANSZA[][MAX_K], int i, int j) {
 
 	// wolne pole
@@ -148,7 +138,6 @@ void plansza_startowa(int PLANSZA[][MAX_K], int i, int j) {
 		PLANSZA[i][j] = 3;
 }
 
-
 void plansza_dalsza(int PLANSZA[][MAX_K], int i, int j, int k) {
 
 	if (PLANSZA[i][j] == 0) cout << " ";
@@ -164,7 +153,6 @@ void plansza_dalsza(int PLANSZA[][MAX_K], int i, int j, int k) {
 						if (PLANSZA[i][j] == 6) cout << "O";
 	k++;
 }
-
 
 void ruch(int gracz, int PLANSZA[MAX_W][MAX_K]) {
 
@@ -212,14 +200,12 @@ void ruch(int gracz, int PLANSZA[MAX_W][MAX_K]) {
 	}
 }
 
-
 //pionek
 void interpretacja(char wiersz, int kolumna, int& w, int& k) {
 
 	w = wiersz;
 	k = kolumna;
 }
-
 
 //pionek
 bool istnienie_pionka(int wp, int kp, int gracz, int PLANSZA[MAX_W][MAX_K]) {
@@ -229,14 +215,12 @@ bool istnienie_pionka(int wp, int kp, int gracz, int PLANSZA[MAX_W][MAX_K]) {
 	else return false;
 }  
 
-
 //pole
 bool spr_puste(int w, int k, int PLANSZA[MAX_W][MAX_K]) {
 
 	if (PLANSZA[w][k] != 0) { return true; }
 	else { return false; }
 }
-
 
 //pionek
 void wyb_pionka(bool& mozliwosc, int PLANSZA[MAX_W][MAX_K], int gracz, int& wp, int& kp, int stan_przed) {
@@ -276,7 +260,6 @@ void wyb_pionka(bool& mozliwosc, int PLANSZA[MAX_W][MAX_K], int gracz, int& wp, 
 	}
 }
 
-
 void wyb_pola_b(bool& mozliwosc, int PLANSZA[MAX_W][MAX_K], int& gracz, int wp, int kp, int& u) {
 
 	int k = 0;
@@ -305,7 +288,6 @@ void wyb_pola_b(bool& mozliwosc, int PLANSZA[MAX_W][MAX_K], int& gracz, int wp, 
 		if (mozliwosc == false) cout << "Wybrałeś złe pole!" << endl;
 	}
 }
-
 
 void wyb_pola(bool& mozliwosc, int PLANSZA[MAX_W][MAX_K], int gracz, int wp, int kp) {
 
