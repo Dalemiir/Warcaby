@@ -1,4 +1,4 @@
-﻿// POP_2019_12_18_projekt_1_Chmielecki_Damian_EIT_3_180070.cpp Visual Studio 2019
+﻿// Chmielecki_Damian.cpp Visual Studio 2019
 
 #include <iostream>
 #include <iomanip>
