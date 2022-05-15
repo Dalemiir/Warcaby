@@ -14,3 +14,4 @@ Jeśli figura ‘o’ lub ‘x’ skończy swój ruch na ostatnim polu, wtedy za
 
 ![image](https://user-images.githubusercontent.com/93549819/168484531-f9b8b68b-7a79-4ad5-aa0c-63b0c4d8a767.png)
 
+![image](https://user-images.githubusercontent.com/93549819/168484610-a35aad1f-5f4f-4cbb-bcb4-eb007e017b91.png)
